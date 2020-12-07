@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="styles_norm_canvas.css" />
+
+    <script type="text/javascript" src=" jquery_3.5.1_.js"></script>
+
+</head>
+
+<body>
+
+    <div id="work">
+        <div id="controls">
+            <div id="controls_btns">
+                <input type="submit" value="close" id="btn_close" onclick="close_work()">
+                <input type="submit" value="start" id="btn_start" onclick="start_anim()">
+                <input type="submit" value="stop" id="btn_stop" onclick="stop_anim()">
+                <input type="submit" value="reload" id="btn_reload" onclick="reload_anim()">
+            </div>
+            <div id="controls_text">
+                Нічого не відбувається
+            </div>
+        </div>
+        <div id="anim">
+            <canvas id="myCanvas"></canvas>
+        </div>
+
+    </div>
+
+
+    <!--  <div id="work">
+        <div id="controls">
+            <div id="controls_text">
+                Нічого не відбувається
+            </div>
+        </div>
+        <div id="anim">
+        </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <div id="controls_btns">
+        <input type="submit" value="close" id="btn_close" onclick="close_work()">
+        <input type="submit" value="start" id="btn_start" onclick="start_anim()">
+        <input type="submit" value="stop" id="btn_stop" onclick="stop_anim()">
+        <input type="submit" value="reload" id="btn_reload" onclick="reload_anim()">
+    </div> -->
+
+
+
+
+
+    <div class="mainblock">
+        <div class="titleblock">
+            <div>
+                <h1>Червона книга України</h1>
+            </div>
+            <div class="tittle">
+                <h2>Охороняй!</h2>
+            </div>
+        </div>
+
+        <div class="contextblock">
+            <div>
+                <img src="images/red_book.jpg" usemap="#mahaon" class="contextimg">
+            </div>
+            <div class="text_block">
+                <map name="mahaon">
+
+                <area shape="rect" coords="60,170,210,310" href="mahaon.html" target="_blank"
+                    alt="Махаон">
+
+            </map>
+
+                <p>Червона книга України — офіційний державний документ, який містить перелік рідкісних, вразливих і зникаючих видів тваринного і рослинного світу у межах України, а також узагальнені відомості про сучасний стан цих видів і заходи щодо їх
+                    збереження. Занесені до Червоної книги України види підлягають охороні на всій території України, у межах її континентального шельфу та виключної морської економічної зони. Станом на квітень 2019 року до Червоної книги України занесено
+                    1369 видів (543 тварин і 826 рослинного світу). Регулюється Законом України «Про Червону книгу України».</p>
+                <p>Державне управління, регулювання та контроль збереження видів, занесених до Червоної книги України здійснюють Кабінет Міністрів України, Міністерство екології та природних ресурсів України та інші державні органи.</p>
+                <ol>
+                    <li>
+                        Наукове забезпечення ведення Червоної книги України, підготовку пропозицій про занесення до Червоної книги України та про виключення з неї видів, контроль підготовки матеріалів, визначення форми її видань і координацію відповідної діяльності здійснює
+                        Національна комісія з питань Червоної книги України, яка створюється Національною академією наук України на базі Інституту зоології НАН України та Інституту ботаніки НАН України, що займаються безпосереднім веденням Червоної книги
+                        України.
+
+                    </li>
+                    <li>
+                        Було зроблено три видання Червоної книги України (1980, 1994—1996, 2009) і згідно законодавства України кожні 10 років має виходити нове видання. У проміжках види можуть заноситися до Червоної книги України окремими наказами Міністерства екології України,
+                        що на практиці робиться лише у особливих виключних випадках (лось у 2017[2]).
+                    </li>
+                </ol>
+                <input type="submit" value="play" onclick="play_work()">
+                <div id="events_text">
+
+                </div>
+            </div>
+        </div>
+        <div class="leftmenublock1">
+            <p><b>Меню</b></p>
+            <ul class="circlelist">
+                <li>
+                    <a href="index.html">
+                    flexBox
+                </a>
+                </li>
+
+                <li>
+                    <a href="index_grid.html">
+                    fake Grid
+                </a>
+                </li>
+                <li>
+                    <a href="index_padding.html">
+                    Padding
+                </a>
+                </li>
+                <li>
+                    <a href="mahaon.html">
+                    Махаон</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightmenublock">
+
+            <img src="images/ad_rozetka.PNG" class="rightadd">
+        </div>
+        <div class="leftmenublock2">
+            <img src="images/ad.jpg" class="leftadd">
+        </div>
+        <div class="footerblock">
+            <div class="tittle">
+                <h1>Вигаданий текст</h1>
+            </div>
+            <div>
+                <h2>(с)Я</h2>
+            </div>
+        </div>
+        <script type="text/javascript" src="script_bottom_norm_canvas.js">
+        </script>
+</body>
+
+</html>
