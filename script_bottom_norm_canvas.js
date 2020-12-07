@@ -24,8 +24,8 @@ let yellow_out = false
 
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext('2d');
-const width = canvas.width = $(document.getElementById('anim')).width();
-const height = canvas.height = $(document.getElementById('anim')).height();
+width = canvas.width = $(document.getElementById('anim')).width();
+height = canvas.height = $(document.getElementById('anim')).height();
 
 
 
@@ -45,6 +45,7 @@ function toStorage(message) {
 
 function drawBall(x, y) {
     ctx.beginPath();
+    ctx.fillStyle = 'yellow';
     ctx.arc(x, y, r, 0, 2 * Math.PI);
     console.log(x + ":" + y)
     ctx.fill();
@@ -119,12 +120,17 @@ function show(elem) {
 function start_anim() {
     //dx = randomInteger(1, 6); щоразу новий кут при старті
     // dy = randomInteger(1, 6);
+
     stop = false;
+
+    canvas.width = $(document.getElementById('anim')).width(); //якщо масштабуєте, то після нажаття старту канвас прийме форму анім
+    canvas.height = $(document.getElementById('anim')).height();
     loop();
     hide("btn_start");
     show("btn_stop");
     document.getElementById("controls_text").textContent = "Натиснуто start";
     toStorage('Натиснуто start');
+
 }
 
 function stop_anim() {
